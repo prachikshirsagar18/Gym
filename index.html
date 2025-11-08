@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FitLife Gym — Strength. Health. Community.</title>
+
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">FitLife <span class="dot">Gym</span></a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#plans">Membership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="loginBtn">Login</button>
+        <a class="btn btn-primary" href="#plans">Join Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero">
+      <!-- fallback image + optional video -->
+      <picture>
+        <!-- If you want a video background, keep video element and add proper mp4 file -->
+        <source media="(min-width:900px)" srcset="images/hero-large.jpg">
+        <img src="images/trainerboy1.jpg" alt="People training at gym" class="hero-bg">
+      </picture>
+
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <h1 class="hero-title">Get Stronger. <span>Feel Healthier.</span> Live Better.</h1>
+          <p class="hero-sub">Expert trainers • Modern equipment • Personalized programs</p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#plans">See Plans</a>
+            <a class="btn btn-outline" href="#contact">Book Free Trial</a>
+          </div>
+
+          <ul class="hero-features">
+            <li>Personalized Plans</li>
+            <li>24/7 Access</li>
+            <li>Nutrition Guidance</li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal">
+          <div class="card">
+            <h3>Start Your Journey</h3>
+            <p>Free assessment + 1 week trial for new members.</p>
+            <form id="quickForm" class="quick-form">
+              <input id="qname" name="qname" type="text" placeholder="Your name" required />
+              <input id="qphone" name="qphone" type="tel" placeholder="Phone number" required />
+              <button class="btn btn-primary" type="submit">Get Started</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="cards">
+          <article class="service-card reveal">
+            <h3>Personal Training</h3>
+            <p>One-on-one coaching to accelerate progress safely.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Group Classes</h3>
+            <p>HIIT, Yoga, Zumba — high-energy and motivating sessions.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Nutrition Coaching</h3>
+            <p>Meal plans and habit coaching to support your goals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINERS -->
+    <section id="trainers" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title light">Meet Our Trainers</h2>
+        <div class="trainers-grid">
+          <div class="trainer-card reveal">
+            <img src="images/trainerboy2.jpg" alt="Rohit Sharma" loading="lazy">
+            <h4>Rohit Sharma</h4>
+            <p class="muted">Strength Coach • 8 yrs</p>
+          </div>
+          <div class="trainer-card reveal">
+            <img src="images/girltrainer.jpg" alt="Anjali Deshmukh" loading="lazy">
+            <h4>Anjali Deshmukh</h4>
+            <p class="muted">Yoga & Mobility • 6 yrs</p>
+          </div>
+          <div class="trainer-card reveal">
+            <img src="images/trainerboy3.jpg" alt="Vikram Patil" loading="lazy">
+            <h4>Vikram Patil</h4>
+            <p class="muted">Cardio Specialist • 5 yrs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANS -->
+<section id="plans" class="section">
+  <div class="container">
+    <h2 class="section-title">Membership Plans</h2>
+
+    <div class="plans-grid">
+      <div class="plan-card reveal plan-click" data-plan="Basic" data-price="₹899/month" data-features="Gym Access (9am–9pm),Locker Facilities,Group Classes">
+        <h3>Basic</h3>
+        <div class="price">₹899 <small>/month</small></div>
+        <ul>
+          <li>Gym Access (9am–9pm)</li>
+          <li>Locker Facilities</li>
+          <li>Group Classes</li>
+        </ul>
+      </div>
+
+      <div class="plan-card popular reveal plan-click" data-plan="Pro" data-price="₹1499/month" data-features="24/7 Access,4 Personal Training Sessions,Nutrition Coaching">
+        <div class="badge">POPULAR</div>
+        <h3>Pro</h3>
+        <div class="price">₹1499 <small>/month</small></div>
+        <ul>
+          <li>24/7 Access</li>
+          <li>4 Personal Training Sessions</li>
+          <li>Nutrition Coaching</li>
+        </ul>
+      </div>
+
+      <div class="plan-card reveal plan-click" data-plan="Elite" data-price="₹2499/month" data-features="Unlimited PT,Priority Support,Exclusive Perks">
+        <h3>Elite</h3>
+        <div class="price">₹2499 <small>/month</small></div>
+        <ul>
+          <li>Unlimited PT</li>
+          <li>Priority Support</li>
+          <li>Exclusive Perks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+   
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-dark">
+      <div class="container contact-wrap">
+        <h2 class="section-title light">Contact & Trial Booking</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Visit Us</h3>
+            <p>FitLife Gym, Nashik</p>
+            <p><strong>Phone:</strong> 8022655895</p>
+            <p><strong>Email:</strong> FitLife@gmail.com</p>
+            <h4>Opening Hours</h4>
+            <p>Mon–Sun: 6:00 AM – 11:00 PM</p>
+          </div>
+
+          <form id="contactForm" class="contact-form reveal">
+            <input id="name" type="text" placeholder="Full name" required />
+            <input id="email" type="email" placeholder="Email" required />
+            <input id="phone" type="tel" placeholder="Phone" required />
+            <textarea id="message" placeholder="Message"></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 FitLife Gym</div>
+      <div class="socials">Follow: <a href="#" class="muted">Instagram</a> · <a href="#" class="muted">Facebook</a></div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
